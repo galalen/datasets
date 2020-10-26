@@ -127,7 +127,6 @@ class SplitsTest(testing.TestCase):
   @classmethod
   def setUpClass(cls):
     super(SplitsTest, cls).setUpClass()
-    dataset_builder._is_py2_download_and_prepare_disabled = False
     cls._builder = testing.DummyDatasetSharedGenerator(
         data_dir=testing.make_tmp_dir())
     cls._builder.download_and_prepare()
